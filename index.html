@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammad Ali | Shopify Developer & SEO Specialist</title>
+    <!-- Tailwind for fast, modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .shopify-green { color: #95bf47; }
+        .bg-shopify { background-color: #95bf47; }
+        .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #95bf47; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Desktop & Mobile Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-shopify rounded-lg flex items-center justify-center text-white">
+                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight">Hammad<span class="shopify-green">Ali</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#projects" class="text-sm font-medium hover:text-green-600 transition">Projects</a>
+                    <a href="#services" class="text-sm font-medium hover:text-green-600 transition">Expertise</a>
+                    <a href="#contact" class="bg-shopify text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-green-700 transition">Hire Me</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-green-700 uppercase bg-green-100 rounded-full">
+                Shopify Plus & OS 2.0 Expert
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                Building Stores That <span class="shopify-green">Convert.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10">
+                I am a Shopify Developer with SEO & CRO expertise. I turn complex Figma designs into lightning-fast, scalable eCommerce experiences.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition flex items-center justify-center">
+                    View My Work <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                </a>
+                <div class="flex gap-2">
+                    <a href="https://linkedin.com/in/hammad-ali-973324369" target="_blank" class="bg-white border border-slate-200 p-4 rounded-xl hover:bg-slate-50 transition">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://tiktok.com/@hammad_shopifyexpert_seo" target="_blank" class="bg-white border border-slate-200 p-4 rounded-xl hover:bg-slate-50 transition">
+                        <i data-lucide="video" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">🔹 Core Services</h2>
+                <div class="h-1 w-20 bg-shopify mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl border border-slate-100 bg-slate-50 hover-lift text-center">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 mx-auto">
+                        <i data-lucide="code-2" class="shopify-green"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Liquid Coding</h3>
+                    <p class="text-slate-600 text-xs">Custom theme development and bug fixing.</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-slate-100 bg-slate-50 hover-lift text-center">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 mx-auto">
+                        <i data-lucide="search" class="shopify-green"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Technical SEO</h3>
+                    <p class="text-slate-600 text-xs">On-page and technical optimization for growth.</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-slate-100 bg-slate-50 hover-lift text-center">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 mx-auto">
+                        <i data-lucide="trending-up" class="shopify-green"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">CRO Expertise</h3>
+                    <p class="text-slate-600 text-xs">Layout improvements to boost sales.</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-slate-100 bg-slate-50 hover-lift text-center">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 mx-auto">
+                        <i data-lucide="move" class="shopify-green"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Migrations</h3>
+                    <p class="text-slate-600 text-xs">Woo, Wix, and Magento to Shopify.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Portfolio Grid -->
+    <section id="projects" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-2 text-center md:text-left">Recently Designed Sites</h2>
+                <p class="text-slate-600 text-center md:text-left">A collection of premium stores I've designed and optimized.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Row 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-blue-100 text-blue-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Fashion</span>
+                    <h3 class="font-bold text-lg mb-2">Pink Tartan</h3>
+                    <p class="text-slate-500 text-sm mb-6">Canadian luxury fashion brand. Custom UI/UX and feature implementation.</p>
+                    <a href="https://pinktartan.ca/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-purple-100 text-purple-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Art</span>
+                    <h3 class="font-bold text-lg mb-2">Jimbobart</h3>
+                    <p class="text-slate-500 text-sm mb-6">Creative artist store. Specialized in visually-driven layouts and storytelling.</p>
+                    <a href="https://www.jimbobart.com/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-orange-100 text-orange-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Lifestyle</span>
+                    <h3 class="font-bold text-lg mb-2">Adored Vintage</h3>
+                    <p class="text-slate-500 text-sm mb-6">Curated boutique. SEO-focused architecture and conversion optimization.</p>
+                    <a href="https://www.adoredvintage.com/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-green-100 text-green-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Apparel</span>
+                    <h3 class="font-bold text-lg mb-2">Ruhposh</h3>
+                    <p class="text-slate-500 text-sm mb-6">Modern apparel brand. Full store setup and theme customization.</p>
+                    <a href="https://www.ruhposh.com" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-pink-100 text-pink-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Retail</span>
+                    <h3 class="font-bold text-lg mb-2">Clothes Mentor</h3>
+                    <p class="text-slate-500 text-sm mb-6">Sustainable fashion retail. Complex inventory and multi-location setup.</p>
+                    <a href="https://clothesmentor.com/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-slate-100 text-slate-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Hardware</span>
+                    <h3 class="font-bold text-lg mb-2">Ton Chauffebiberon</h3>
+                    <p class="text-slate-500 text-sm mb-6">Specialized product store. Optimized for mobile-first conversions.</p>
+                    <a href="https://tonchauffebiberon.com/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-cyan-100 text-cyan-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Industrial</span>
+                    <h3 class="font-bold text-lg mb-2">UK Adhesives</h3>
+                    <p class="text-slate-500 text-sm mb-6">B2B/B2C Adhesive solutions. Technical product specification layout.</p>
+                    <a href="https://ukadhesives.myshopify.com/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-indigo-100 text-indigo-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Decor</span>
+                    <h3 class="font-bold text-lg mb-2">The Carved Curves</h3>
+                    <p class="text-slate-500 text-sm mb-6">Home decor brand. Custom typography and grid-based UI enhancements.</p>
+                    <a href="https://thecarvedcurves.uk/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-red-100 text-red-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Store</span>
+                    <h3 class="font-bold text-lg mb-2">Darnova by Darakhshan</h3>
+                    <p class="text-slate-500 text-sm mb-6">Full brand store design and SEO-optimized listings.</p>
+                    <a href="https://darnovabydarakhshan.store/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-teal-100 text-teal-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">General</span>
+                    <h3 class="font-bold text-lg mb-2">Zaynove Store</h3>
+                    <p class="text-slate-500 text-sm mb-6">Multi-category Shopify store with customized navigation.</p>
+                    <a href="https://zaynove.store/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-yellow-100 text-yellow-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Tech</span>
+                    <h3 class="font-bold text-lg mb-2">Evolved Chargers</h3>
+                    <p class="text-slate-500 text-sm mb-6">Tech accessories brand. Speed optimization and technical SEO.</p>
+                    <a href="https://evolvedchargers.com/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 hover-lift">
+                    <span class="text-[10px] bg-blue-100 text-blue-700 px-2 py-1 rounded-md uppercase font-bold tracking-widest mb-4 inline-block">Development</span>
+                    <h3 class="font-bold text-lg mb-2">Kurlicodes</h3>
+                    <p class="text-slate-500 text-sm mb-6">Portfolio and development showcase site implementation.</p>
+                    <a href="https://kurlicodes.com/" target="_blank" class="text-green-600 font-bold text-sm hover:underline">Visit Store →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developmental Stores Sandbox -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold mb-2">📌 Developmental Sandbox</h2>
+                <p class="text-slate-600">Stores built for practice, custom code testing, and feature implementation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Sandbox 1 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Password: 684</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Shoploom eCommerce</h3>
+                    <p class="text-slate-500 text-sm mb-6">Testing ground for complex Liquid logic and dynamic sections.</p>
+                    <a href="https://ecommerce-shoploom.myshopify.com/" target="_blank" class="bg-shopify text-white w-full py-3 rounded-xl font-bold block text-center hover:bg-green-700 transition">View implementation</a>
+                </div>
+
+                <!-- Sandbox 2 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Password: 684</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Electro Vehicle</h3>
+                    <p class="text-slate-500 text-sm mb-6">High-tech UI test for heavy product catalogs.</p>
+                    <a href="https://electro-vehicle.myshopify.com/" target="_blank" class="bg-shopify text-white w-full py-3 rounded-xl font-bold block text-center hover:bg-green-700 transition">View implementation</a>
+                </div>
+
+                <!-- Sandbox 3 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Password: 1</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Electromart Shops</h3>
+                    <p class="text-slate-500 text-sm mb-6">Technical trial for marketplace layout and rapid filtering.</p>
+                    <a href="https://electromart-shops.myshopify.com/" target="_blank" class="bg-shopify text-white w-full py-3 rounded-xl font-bold block text-center hover:bg-green-700 transition">View implementation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Your business is my <span class="shopify-green">responsibility.</span></h2>
+            <p class="text-slate-400 max-w-2xl mx-auto mb-10">
+                Ready to transform your Shopify store? I deliver every project on time, within budget, and with a relentless focus on quality.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://linkedin.com/in/hammad-ali-973324369" target="_blank" class="bg-shopify text-white px-10 py-4 rounded-xl font-bold hover:bg-green-700 transition">Contact on LinkedIn</a>
+                <a href="https://tiktok.com/@hammad_shopifyexpert_seo" target="_blank" class="bg-white/10 backdrop-blur-sm border border-white/20 px-10 py-4 rounded-xl font-bold hover:bg-white/20 transition">Follow on TikTok</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
+            <div>
+                <span class="text-xl font-bold tracking-tight">Hammad<span class="shopify-green">Ali</span></span>
+                <p class="text-slate-400 text-xs mt-2 uppercase tracking-widest">Shopify Developer • SEO • CRO</p>
+            </div>
+            
+            <p class="text-slate-500 text-sm">© 2024 Hammad Ali. All projects delivered with excellence.</p>
+            
+            <div class="flex space-x-4">
+                <a href="https://linkedin.com/in/hammad-ali-973324369" class="text-slate-400 hover:text-green-600 transition"><i data-lucide="linkedin"></i></a>
+                <a href="https://tiktok.com/@hammad_shopifyexpert_seo" class="text-slate-400 hover:text-green-600 transition"><i data-lucide="video"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Handle mobile menu button visibility (Basic)
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            alert("Scroll down to explore Projects, Services, and Social links!");
+        });
+    </script>
+</body>
+</html>
